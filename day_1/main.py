@@ -1,6 +1,6 @@
 import time
 
-def excercise_1():
+def exercise_1():
     """Calculate the top calories carried by one elf"""
     amount = 0
     top = 0
@@ -17,7 +17,7 @@ def excercise_1():
 
     print("Most amount of calories carried by one elf:", top)
 
-def excercise_2():
+def exercise_2():
     """Calculate the top calories carried by the top 3 elves"""
     amount = 0
     top = [0, 0, 0]  # max length of 3
@@ -38,16 +38,16 @@ def excercise_2():
     print("Top 3 calories carried by elves:", top, "\nWith a total of:", sum(top))
 
 def main():
-    """Time and run all excercises"""
+    """Time and run all exercises"""
     tick = time.perf_counter()
-    excercise_1()
+    exercise_1()
     tock = time.perf_counter()
-    print(f"Ran the first excercise in: {tock - tick:04f} seconds")
+    print(f"Ran the first exercise in: {tock - tick:04f} seconds")
 
     tick2 = time.perf_counter()
-    excercise_2()
+    exercise_2()
     tock2 = time.perf_counter()
-    print(f"Ran the second excercise in: {tock2 - tick2:04f} seconds")
+    print(f"Ran the second exercise in: {tock2 - tick2:04f} seconds")
 
 if __name__ == "__main__":
     main()
